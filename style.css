@@ -1,0 +1,245 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.navbar {
+  font-size: 18px;
+}
+
+.dropdown-item,
+dropdown-menu {
+  font-size: 16px;
+}
+
+.image-bg {
+  height: 100vh;
+  background-image: url(./images/dark-tech-glowing-background-picjumbo-com.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.title span {
+  font-size: 7.5rem;
+  opacity: 0;
+  animation: appear 0.5s forwards;
+  color: rgb(160, 138, 138);
+  text-shadow: 8px 8px 16px rgba(181, 16, 16, 0.5);
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Delay each letter */
+.title span:nth-child(1) {
+  animation-delay: 0s;
+}
+.title span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.title span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.title span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.title span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.title span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.title span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.title span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.title span:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.title span:nth-child(10) {
+  animation-delay: 0.9s;
+}
+.title span:nth-child(11) {
+  animation-delay: 1s;
+}
+.title span:nth-child(12) {
+  animation-delay: 1.1s;
+}
+.title span:nth-child(13) {
+  animation-delay: 1.2s;
+}
+.title span:nth-child(14) {
+  animation-delay: 1.3s;
+}
+.title span:nth-child(15) {
+  animation-delay: 1.4s;
+}
+.title span:nth-child(16) {
+  animation-delay: 1.5s;
+}
+.title span:nth-child(17) {
+  animation-delay: 1.6s;
+}
+.title span:nth-child(18) {
+  animation-delay: 1.7s;
+}
+.title span:nth-child(19) {
+  animation-delay: 1.8s;
+}
+.title span:nth-child(20) {
+  animation-delay: 1.9s;
+}
+.title span:nth-child(21) {
+  animation-delay: 2s;
+}
+.title span:nth-child(22) {
+  animation-delay: 2.1s;
+}
+.title span:nth-child(23) {
+  animation-delay: 2.2s;
+}
+.title span:nth-child(24) {
+  animation-delay: 2.3s;
+}
+.title span:nth-child(25) {
+  animation-delay: 2.4s;
+}
+.title span:nth-child(26) {
+  animation-delay: 2.5s;
+}
+.title span:nth-child(27) {
+  animation-delay: 2.6s;
+}
+.title span:nth-child(28) {
+  animation-delay: 2.7s;
+}
+.title span:nth-child(29) {
+  animation-delay: 2.8s;
+}
+.title span:nth-child(30) {
+  animation-delay: 2.9s;
+}
+.title span:nth-child(31) {
+  animation-delay: 3s;
+}
+.title span:nth-child(32) {
+  animation-delay: 3.1s;
+}
+
+.title span:nth-child(33) {
+  animation-delay: 3.2s;
+}
+.title span:nth-child(34) {
+  animation-delay: 3.3s;
+}
+.title span:nth-child(35) {
+  animation-delay: 3.4s;
+}
+.title span:nth-child(36) {
+  animation-delay: 3.5s;
+}
+.title span:nth-child(37) {
+  animation-delay: 3.6s;
+}
+.title span:nth-child(38) {
+  animation-delay: 3.7s;
+}
+.title span:nth-child(39) {
+  animation-delay: 3.8s;
+}
+.title span:nth-child(40) {
+  animation-delay: 3.9s;
+}
+.title span:nth-child(41) {
+  animation-delay: 4s;
+}
+.title span:nth-child(42) {
+  animation-delay: 4.1s;
+}
+.title span:nth-child(43) {
+  animation-delay: 4.2s;
+}
+.title span:nth-child(44) {
+  animation-delay: 4.3s;
+}
+.title span:nth-child(45) {
+  animation-delay: 4.4s;
+}
+.title span:nth-child(46) {
+  animation-delay: 4.5s;
+}
+.title span:nth-child(47) {
+  animation-delay: 4.6s;
+}
+.title span:nth-child(48) {
+  animation-delay: 4.7s;
+}
+.title span:nth-child(49) {
+  animation-delay: 4.8s;
+}
+.title span:nth-child(50) {
+  animation-delay: 4.9s;
+}
+.title span:nth-child(51) {
+  animation-delay: 5s;
+}
+.title span:nth-child(52) {
+  animation-delay: 5.1s;
+}
+.title span:nth-child(53) {
+  animation-delay: 5.2s;
+}
+.title span:nth-child(54) {
+  animation-delay: 5.3s;
+}
+.title span:nth-child(55) {
+  animation-delay: 5.4s;
+}
+.title span:nth-child(56) {
+  animation-delay: 5.5s;
+}
+.title span:nth-child(57) {
+  animation-delay: 5.6s;
+}
+.title span:nth-child(58) {
+  animation-delay: 5.7s;
+}
+.title span:nth-child(59) {
+  animation-delay: 5.8s;
+}
+.title span:nth-child(60) {
+  animation-delay: 5.9s;
+}
+.title span:nth-child(61) {
+  animation-delay: 6s;
+}
+.title span:nth-child(62) {
+  animation-delay: 6.1s;
+}
+
+.title-2 {
+  font-size: 3rem;
+  color: rgb(160, 138, 138);
+  text-shadow: 8px 8px 16px rgba(181, 16, 16, 0.5);
+}
+
+.container {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
