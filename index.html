@@ -14,7 +14,11 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+    <!--Navigation bar added using bootstrap-->
+    <nav
+      class="navbar navbar-dark bg-dark fixed-top"
+      aria-label="First navbar example"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="#">GM Web-Dev</a>
         <button
@@ -29,13 +33,13 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="navbar-collapse collapse" id="navbarsExample01" style="">
+        <div class="navbar-collapse collapse" id="navbarsExample01">
           <ul class="navbar-nav me-auto mb-2">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
 
             <li class="nav-item dropdown">
@@ -47,10 +51,11 @@
                 >More info</a
               >
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Services</a></li>
-                <li><a class="dropdown-item" href="#">Portfolio</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">Contact</a>
+                  <a class="dropdown-item" href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#contact">Contact</a>
                 </li>
               </ul>
             </li>
@@ -58,8 +63,12 @@
         </div>
       </div>
     </nav>
+    <!--Hero Section the text appears one letter at a time-->
     <section class="image-bg" id="home">
       <div class="container">
+        <div class="main-title">
+          <h1>Create the future pixel by pixel: welcome to my digital world</h1>
+        </div>
         <div class="row">
           <h2 class="title">
             <span>C</span>
@@ -125,11 +134,195 @@
             <span>l</span>
             <span>d</span>
           </h2>
-          <p class="title-2">I`m a professional Web-Dev in Berlin</p>
+          <p class="title-2">I am a web-dev student in Berlin</p>
         </div>
       </div>
     </section>
-    <!-- Your code here -->
+    <div class="section-div">
+      <section class="video" id="about">
+        <video autoplay loop muted playsinline id="video-background">
+          <source
+            src="./video/3141211-uhd_3840_2160_25fps.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="container-1">
+          <h2>About Me</h2>
+        </div>
+        <div class="container-2">
+          <img
+            src="images/IMG_7502.jpg"
+            class="foto"
+            alt="profile picture of myself with t-shirt"
+          />
+          <div class="about-me-text">
+            <p>
+              Hello! I'm Gerardo Michele Mussuto, a former dancer who found his
+              new passion in the world of technology. After years of experience
+              on stage, I decided to embark on a new educational journey at the
+              DCI school to become a full-stack web developer. My passion for
+              theater and opera is reflected in my aspiration to develop
+              websites for theaters around the world and for emerging artists. I
+              dream of combining my stage knowledge with my technical skills to
+              create engaging and immersive digital experiences. Outside of
+              work, I enjoy spending my free time playing video games, taking
+              walks in nature, and exploring new travel destinations. I'm always
+              looking for new challenges and creative opportunities to grow both
+              professionally and personally. I'm excited to share my passion for
+              technology and the entertainment world through my work and to
+              create experiences that inspire and engage people worldwide.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--Porfolio Section contains a card group with some project-->
+      <section class="project" id="portfolio">
+        <div class="container-tp">
+          <h2>Portfolio</h2>
+        </div>
+        <div class="card-container">
+          <div class="card-group">
+            <div class="card">
+              <img src="./img portfolio/caption-this.png" alt="Project 1" />
+              <p>
+                Project realized using : hover , animation and transition
+                property
+              </p>
+              <div id="show-more-button">
+                <a
+                  href="./project/Caption This/uib-interactions-caption-this-Onid89/index.html"
+                  target="_blank"
+                >
+                  <button class="show-more-button">Show More</button></a
+                >
+              </div>
+            </div>
+            <div class="card">
+              <img src="img portfolio/lighting.png" alt="Project 2" />
+              <p>
+                Project realized using: text-shadow, animation-delay and
+                @keyframes
+              </p>
+              <div id="show-more-button">
+                <a
+                  href="./project/Light Me Up/uib-interactions-lighting-1-Onid89/index.html"
+                  target="_blank"
+                >
+                  <button class="show-more-button">Show More</button></a
+                >
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img portfolio/sport-grid.png" alt="Project 3" />
+
+              <p>Project Realized using: Grid container</p>
+              <br />
+              <div id="show-more-button">
+                <a
+                  href="./project/Sports Grid/uib-layout-grid-parent-Onid89/index.html"
+                  target="_blank"
+                >
+                  <button class="show-more-button">Show More</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card-group">
+            <div class="card">
+              <img src="./img portfolio/Swagger.png" alt="Project 4" />
+              <p>
+                Project Realized using: A Form with four field inside and
+                special color around
+              </p>
+              <div id="show-more-button">
+                <a
+                  href="./project/Swagger/uib-data-swagger-Onid89/index.html"
+                  target="_blank"
+                >
+                  <button class="show-more-button">Show More</button></a
+                >
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img portfolio/Grid-flexbox.png" alt="Project 5" />
+              <p>Project Realized using at the same time Grid and Flaxbox</p>
+              <br />
+              <div id="show-more-button">
+                <a
+                  href="./project/Grid and Flexbox, living in harmony!/uib-layout-grid-and-flexbox-harmony-Onid89/index.html"
+                  target="_blank"
+                >
+                  <button class="show-more-button">Show More</button></a
+                >
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img portfolio/web-page.png" alt="Project 6" />
+              <p>
+                This is my first project made with html and css during the
+                orientation course
+              </p>
+              <div id="show-more-button">
+                <a
+                  href="./project/cantinedelnotaiowebpage/index.html"
+                  target="_blank"
+                >
+                  <button class="show-more-button">Show More</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--Contact Section working with Formspree-->
+
+    <div class="container-me" id="contact">
+      <h3>Contact Me</h3>
+      <form action="https://formspree.io/f/mpzvndnp" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="submit" value="Send" />
+      </form>
+    </div>
+    <!--Footer Section-->
+    <footer>
+      <div class="footerclass">
+        <div class="info">
+          <div class="contact-detail">
+            <h2>Address:</h2>
+            <p>Berlin,10827</p>
+          </div>
+          <div class="contact-detail">
+            <h2>Email:</h2>
+            <p><a href="mailto:you@example.com">dinomussuto89@gmail.com</a></p>
+          </div>
+          <div class="contact-detail">
+            <h2>Github:</h2>
+            <p>
+              <a
+                href="https://github.com/Onid89?tab=repositories"
+                target="_blank"
+                >Github</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2024 Gerardo Michele Mussuto. Made with ❤︎</p>
+        </div>
+      </div>
+    </footer>
+
+    <!--Bootstrap-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
