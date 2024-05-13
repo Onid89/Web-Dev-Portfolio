@@ -41,6 +41,7 @@ body {
   position: relative;
 }
 
+/* text will appear letter by letter (only on large screens) */
 .title span {
   font-size: 7.5rem;
   opacity: 0;
@@ -90,6 +91,7 @@ body {
   font-weight: bolder;
 }
 
+/* make the text more visible  */
 @keyframes lightingAnimation {
   0% {
     color: rgb(160, 138, 138);
@@ -128,6 +130,7 @@ body {
   opacity: 0.8;
 }
 
+/* container -2 contains (img)foto and about-me text */
 .container-2 {
   margin-top: 10rem;
   display: flex;
@@ -141,6 +144,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .about-me-text {
   display: flex;
   /* width: 75%;
@@ -148,6 +152,7 @@ body {
 
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* Apply a blur effect to the background of the element, with a radius of 20 pixels. The -webkit- prefix is used to support older WebKit browsers. */
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   font-size: 3rem;
@@ -190,8 +195,8 @@ body {
   }
 }
 .container-tp h2 {
-  text-align: center;
-  justify-content: center;
+  /* text-align: center;
+  justify-content: center; */
   font-size: 5.5rem;
   color: rgb(160, 138, 138);
   animation: lightingAnimation 3s linear infinite;
@@ -288,7 +293,7 @@ textarea {
 
 .card-container {
   /* black border for div check */
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 3rem;
