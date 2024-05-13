@@ -2,6 +2,7 @@
   font-size: 62.5%;
 }
 
+/* reset the default margins, borders, and padding of all elements in the documen */
 * {
   margin: 0;
   border: 0;
@@ -12,21 +13,22 @@ body {
   background-color: #460d0d;
 }
 
+/* The main-title , h1 title will not be shown when the site launches on large screens */
+
 .main-title {
   display: none;
 }
 
 .navbar {
-  top: 50px;
+  top: 4rem;
   width: 100%;
-  z-index: 1000;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 2rem;
 }
 
 .dropdown-item,
 .dropdown-menu {
-  font-size: 16px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -106,7 +108,7 @@ body {
 }
 
 .foto {
-  margin-inline: 15px;
+  margin-inline: 16px;
   width: 20%;
   opacity: 0.8;
 }
