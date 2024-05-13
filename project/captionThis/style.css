@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  background-color: grey;
+}
+
+/* .container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.002);
+  opacity: 0;
+  transition: opacity 1s ease;
+  z-index: 2;
+}
+ */
+.child {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out; /*starts slowly, accelerates in the middle and then gradually slows down at the end. This creates a smooth and pleasant motion effect for users.*/
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /*Place an element exactly in the center of a parent container.*/
+  opacity: 0; /* initially hidden */
+  transition: opacity 0.3s ease-in-out;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Zooming effect with image rotation of 30 degrees */
+
+.container:hover .child {
+  transform: rotate(30deg) scale(1.1);
+}
+
+.container:hover .text {
+  opacity: 1;
+}
