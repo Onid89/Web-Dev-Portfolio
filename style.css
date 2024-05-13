@@ -11,6 +11,8 @@
 
 body {
   background-color: #460d0d;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 /* The main-title , h1 title will not be shown when the site launches on large screens */
