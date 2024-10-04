@@ -26,7 +26,7 @@ Welcome to the portfolio of Gerardo Michele Mussuto! This website showcases my j
 - Bootstrap 5.3
 - Formspree (for handling form submissions)
 
-### Key Files:
+## Key Files
 
 - `index.html`: The main landing page of the portfolio.
 - `style.css`: Contains all the custom CSS for styling the portfolio.
