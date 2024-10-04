@@ -6,7 +6,7 @@ Welcome to the portfolio of Gerardo Michele Mussuto! This website showcases my j
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
+- [Key Files](#key-file)
 - [How to Run](#how-to-run)
 - [Contact](#contact)
 
