@@ -38,7 +38,7 @@ Welcome to the portfolio of Gerardo Michele Mussuto! This website showcases my j
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/Onid89
+   git clone git@github.com:Onid89/Web-Dev-Portfolio.git
    ```
 
 ## Contact
