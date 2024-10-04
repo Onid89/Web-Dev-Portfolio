@@ -2,7 +2,7 @@
   font-size: 62.5%;
 }
 
-/* reset the default margins, borders, and padding of all elements in the documen */
+/* reset the default margins, borders, and padding of all elements in the document */
 * {
   margin: 0;
   border: 0;
@@ -14,8 +14,6 @@ body {
   overflow-x: hidden;
   max-width: 100%;
 }
-
-/* The main-title , h1 title will not be shown when the site launches on large screens */
 
 .main-title {
   display: none;
@@ -41,14 +39,12 @@ body {
   position: relative;
 }
 
-/* text will appear letter by letter (only on large screens) */
 .title span {
-  font-size: 7.5rem;
+  font-size: 7.5rem; /* dimensione predefinita */
   opacity: 0;
   animation: appear 0.5s forwards;
   color: rgb(160, 138, 138);
-  text-shadow: 8px 8px 16px rgba(181, 16, 16, 0.5);
-
+  text-shadow: 0.8rem 0.8rem 1.6rem rgba(181, 16, 16, 0.5);
   word-break: break-word;
 }
 
@@ -63,8 +59,8 @@ body {
 
 .title-2 {
   font-size: 3rem;
-  color: rgb(160, 138, 138);
-  text-shadow: 8px 8px 16px rgba(181, 16, 16, 0.5);
+  color: #a08a8a;
+  text-shadow: 0.8rem 0.8rem 1.6rem rgba(181, 16, 16, 0.5);
 }
 
 .container {
@@ -80,10 +76,10 @@ body {
   text-align: center;
   justify-content: center;
 }
+
 .container-1 h2 {
   text-align: center;
   align-items: center;
-  /* margin-top: 2.8rem; */
   font-size: 4.5rem;
   color: rgb(160, 138, 138);
   padding-left: 1rem;
@@ -91,7 +87,6 @@ body {
   font-weight: bolder;
 }
 
-/* make the text more visible  */
 @keyframes lightingAnimation {
   0% {
     color: rgb(160, 138, 138);
@@ -104,7 +99,7 @@ body {
 
 .video {
   position: relative;
-  height: 100%; /* Set the height to 100vh to cover the entire section */
+  height: 100%;
   display: flex;
 }
 
@@ -115,31 +110,32 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1; /* Move the video behind the content */
+  z-index: -1;
 }
 
 .container-1,
 .container-2 {
   position: relative;
-  z-index: 1 Move the content on top of the video;
+  z-index: 1;
 }
 
 .foto {
-  margin-inline: 16px;
+  margin-inline: 1.6rem;
   width: 20%;
   opacity: 0.8;
 }
 
-/* container -2 contains (img)foto and about-me text */
 .container-2 {
   margin-top: 10rem;
   display: flex;
+  flex-direction: row;
   align-items: start;
 }
 
 .container-2 img {
   width: 25%;
 }
+
 .section-div {
   display: flex;
   flex-direction: column;
@@ -147,40 +143,25 @@ body {
 
 .about-me-text {
   display: flex;
-  /* width: 75%;
-  height: 80%; */
-
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  /* Apply a blur effect to the background of the element, with a radius of 20 pixels. The -webkit- prefix is used to support older WebKit browsers. */
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  flex-direction: column;
+  border-radius: 1.6rem;
+  box-shadow: 0 0.4rem 3rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2rem);
   font-size: 3rem;
   color: rgb(160, 138, 138);
   padding: 2rem;
-  position: relative;
   margin-bottom: 10rem;
-  p {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding-right: 9rem;
-    margin-left: 1rem;
-  }
 }
 
-/*Card Section Style*/
+.about-me-text p {
+  padding-right: 9rem;
+  margin-left: 1rem;
+}
 
 .project {
-  position: relative;
   max-width: 100%;
-  height: 100%;
-  /*  margin: 40px; */
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
   background: rgba(61, 1, 1, 0.952);
-  background-size: cover;
-  position: relative;
   margin-top: 10rem;
 }
 
@@ -190,13 +171,13 @@ body {
   color: rgb(160, 138, 138);
   opacity: 0;
   display: flex;
-  h1 {
-    font-size: 7em;
-  }
 }
+
+.main-title h1 {
+  font-size: 7rem;
+}
+
 .container-tp h2 {
-  /* text-align: center;
-  justify-content: center; */
   font-size: 5.5rem;
   color: rgb(160, 138, 138);
   animation: lightingAnimation 3s linear infinite;
@@ -214,36 +195,33 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 0;
 }
 
-/* work on the buttons when responsive */
 .card {
   margin: 1rem;
-  width: calc(33.33% - 40px);
+  width: calc(33.33% - 4rem);
   background: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   padding: 1rem;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .card img {
   width: 100%;
-  height: 150px;
+  height: 15rem;
   object-fit: cover;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .card p {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .container-me {
   background-color: #f1f1f1;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 5px;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
   margin-top: 20rem;
 }
 
@@ -254,13 +232,10 @@ input {
 input,
 textarea {
   width: 100%;
-  padding: 12px;
-  border: 1px solid #460d0d;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+  padding: 1.2rem;
+  border-radius: 0.4rem;
+  margin-top: 0.6rem;
+  margin-bottom: 1.6rem;
 }
 
 .show-more-button {
@@ -269,134 +244,137 @@ textarea {
   background-color: #290601;
   color: #ffffff;
   font-size: 2rem;
-  font-family: "Courgette", cursive;
+  font-family: 'Courgette', cursive;
   cursor: pointer;
-  box-shadow: 0.3rem 0.3rem 0.3rem rgb(100, 98, 98);
 }
 
 .info {
   background-color: #f1f1f188;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 5px;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
   text-align: center;
 }
 
-.info h2 {
-  margin-bottom: 10px;
-}
-
-.info a {
-  color: #0066cc;
-  text-decoration: none;
-}
-
 .card-container {
-  /* black border for div check */
-  /* border: 2px solid black; */
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 3rem;
 }
 
-.project {
-  margin-top: -10rem;
-}
-
-form {
-  font-size: medium;
-}
 footer {
   width: 100%;
   font-size: large;
   text-align: center;
+}
+
+footer .info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15rem;
+  padding-left: 15rem;
+  background-color: #f1f1f188;
+}
+
+footer .copyright {
+  text-align: center;
+  justify-content: center;
+}
+
+/* Media Queries for Smartphone Adaptation */
+
+@media screen and (max-width: 480px) {
+  .main-title {
+    display: block;
+    font-size: 4rem;
+  }
+
+  .image-bg {
+    display: none;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .navbar {
+    font-size: 1.5rem;
+  }
+
+  .title span {
+    font-size: 3.5rem;
+    padding: 0 0.5rem; /* Space between letters */
+  }
+
+  .title-2 {
+    display: none;
+    font-size: 2.2rem;
+  }
+
+  .container-1 h2 {
+    display: none;
+    font-size: 3rem;
+  }
+
+  .container-2 {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+  }
+
+  .foto {
+    width: 60%;
+  }
+
+  .about-me-text {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .card img {
+    height: auto;
+  }
+
+  .project {
+    margin-top: 5rem;
+  }
+
+  .container-me,
   .info {
-    width: 100%;
-    justify-content: space-between;
-    padding-right: 15rem;
-    padding-left: 15rem;
-    background-color: #f1f1f188;
-    display: flex;
-    position: relative;
+    padding: 1rem;
+    margin: 1rem;
   }
-  .copyright {
-    text-align: center;
-    justify-content: center;
+
+  footer .info {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  footer .info .copyright {
+    margin-top: 1rem;
   }
 }
 
-/* Adaptation for cellular phones */
+/*TEST----------------------------------------------------*/
+.responsive-image {
+  display: none; /* Nascondi l'immagine di default */
+}
 
-@media screen and (max-width: 480px) and (orientation: portrait) {
-  .main-title {
-    opacity: 1;
-  }
-  .title {
-    display: none;
-  }
-  .about-me-text {
-    display: flex;
-    flex-direction: column;
-  }
-  .about-me-text p {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  .footerclass .info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Mostra l'immagine solo su schermi di massimo 480px */
+@media screen and (max-width: 480px) {
+  .responsive-image {
+    display: block; /* Mostra l'immagine su smartphone */
+    width: 100%; /* Rendi l'immagine reattiva */
+    height: auto; /* Mantieni le proporzioni */
   }
 }
-/* Adaptation for tablets and medium size screens */
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .main-title {
-    opacity: 1;
-  }
-  .title {
-    display: none;
-  }
-  .about-me-text {
-    display: flex;
-    flex-direction: column;
-  }
-  .about-me-text p {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  .footerclass .info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-/* Adaptation for smaller and medium rasolution screens */
-
-@media screen and (min-width: 769px) and (max-width: 1783px) {
-  .main-title {
-    opacity: 1;
-  }
-  .title {
-    display: none;
-  }
-  .about-me-text {
-    display: flex;
-    flex-direction: column;
-  }
-  .about-me-text p {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  .footerclass .info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
+/*TEST----------------------------------------------------*/
 
 /* Hero Section Delay each letter */
 .title span:nth-child(1) {
