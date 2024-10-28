@@ -40,7 +40,7 @@ body {
 }
 
 .title span {
-  font-size: 7.5rem; /* dimensione predefinita */
+  font-size: 7.5rem;
   opacity: 0;
   animation: appear 0.5s forwards;
   color: rgb(160, 138, 138);
@@ -198,6 +198,7 @@ body {
 }
 
 .card {
+  position: relative;
   margin: 1rem;
   width: calc(33.33% - 4rem);
   background: #fff;
@@ -239,6 +240,10 @@ textarea {
 }
 
 .show-more-button {
+  display: block;
+  position: sticky;
+  bottom: 0 !important;
+  left: 0 !important;
   padding: 0.5rem;
   border-radius: 1rem;
   background-color: #290601;
