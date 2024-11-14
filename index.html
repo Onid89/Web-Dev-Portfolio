@@ -7,351 +7,353 @@
       name="description"
       content="Explore Gerardo Mussuto's portfolio showcasing his web development projects. Learn about his background, skills, and contact information. Get in touch for collaborations."
     />
+    <!-- * Main page title nad logo -->
     <title>GM Portfolio</title>
+    <!-- ? Your logo here - replace with the path and name of the file -->
+    <!-- <link rel="icon" href="path/to/your/logo.png" type="image/png"> -->
 
-    <link rel="stylesheet" href="style.css" />
-    <!-- bootstrap CDN -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- * Bootstrap CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!-- * Fontsawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- * Google fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!--Navigation bar added using bootstrap-->
-    <nav
-      class="navbar navbar-dark bg-dark fixed-top"
-      aria-label="First navbar example"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">GM Web-Dev</a>
-        <button
-          class="navbar-toggler collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarsExample01"
-          aria-controls="navbarsExample01"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- * Header -->
+    <header>
+      <!-- * Navigation bar added using bootstrap-->
+      <nav
+        class="navbar navbar-dark bg-dark fixed-top"
+        aria-label="First navbar example"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">GM Web-Dev</a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample01"
+            aria-controls="navbarsExample01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="navbar-collapse collapse" id="navbarsExample01">
-          <ul class="navbar-nav me-auto mb-2">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
+          <div class="navbar-collapse collapse" id="navbarsExample01">
+            <ul class="navbar-nav me-auto mb-2">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
 
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >More info</a
-              >
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#portfolio">Portfolio</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#contact">Contact</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!--Hero Section the text appears one letter at a time-->
-    <section class="image-bg" id="home">
-      <div class="container">
-        <div class="main-title">
-          <h1>Create the future pixel by pixel: welcome to my digital world</h1>
-        </div>
-        <div class="row">
-          <h2 class="title">
-            <span>C</span>
-            <span>r</span>
-            <span>e</span>
-            <span>a</span>
-            <span>t</span>
-            <span>e</span>
-            <span>&nbsp;</span>
-            <span>t</span>
-            <span>h</span>
-            <span>e</span>
-            <span>&nbsp;</span>
-            <span>f</span>
-            <span>u</span>
-            <span>t</span>
-            <span>u</span>
-            <span>r</span>
-            <span>e</span>
-            <span>&nbsp;</span>
-            <span>p</span>
-            <span>i</span>
-            <span>x</span>
-            <span>e</span>
-            <span>l</span>
-            <span>&nbsp;</span>
-            <span>b</span>
-            <span>y</span>
-            <span>&nbsp;</span>
-            <span>p</span>
-            <span>i</span>
-            <span>x</span>
-            <span>e</span>
-            <span>l</span>
-            <span>:</span>
-            <span>&nbsp;</span>
-            <span>w</span>
-            <span>e</span>
-            <span>l</span>
-            <span>c</span>
-            <span>o</span>
-            <span>m</span>
-            <span>e</span>
-            <span>&nbsp;</span>
-            <span>t</span>
-            <span>o</span>
-
-            <span>&nbsp;</span>
-            <span>m</span>
-            <span>y</span>
-            <span>&nbsp;</span>
-            <span>d</span>
-            <span>i</span>
-            <span>g</span>
-            <span>i</span>
-            <span>t</span>
-            <span>a</span>
-            <span>l</span>
-            <span>&nbsp;</span>
-            <span>w</span>
-            <span>o</span>
-            <span>r</span>
-            <span>l</span>
-            <span>d</span>
-          </h2>
-          <!-- <p class="title-2">I am a web-dev student in Berlin</p> -->
-        </div>
-      </div>
-      <!-- About Me Section -->
-    </section>
-    <!---TEST--------------------------------------------------------------------->
-    <div class="image-container">
-      <img
-        src="images/pixel-by-pixel.png"
-        alt="pixel"
-        class="responsive-image"
-      />
-    </div>
-    <!------------------------TEEEESSSSSTTTT-------------------------------------------------->
-    <div class="section-div">
-      <section class="video" id="about">
-        <video autoplay loop muted playsinline id="video-background">
-          <source
-            src="./video/3141211-uhd_3840_2160_25fps.mp4"
-            type="video/mp4"
-          />
-        </video>
-        <div class="container-1">
-          <h2>About Me</h2>
-        </div>
-        <div class="container-2">
-          <img
-            src="images/IMG_7502.jpg"
-            class="foto"
-            alt="profile picture of myself with t-shirt"
-          />
-          <div class="about-me-text">
-            <p>
-              Hello! I'm Gerardo Michele Mussuto, a former dancer who found his
-              new passion in the world of technology. After years of experience
-              on stage, I decided to embark on a new educational journey at the
-              DCI school to become a full-stack web developer. My passion for
-              theater and opera is reflected in my aspiration to develop
-              websites for theaters around the world and for emerging artists. I
-              dream of combining my stage knowledge with my technical skills to
-              create engaging and immersive digital experiences. Outside of
-              work, I enjoy spending my free time playing video games, taking
-              walks in nature, and exploring new travel destinations. I'm always
-              looking for new challenges and creative opportunities to grow both
-              professionally and personally. I'm excited to share my passion for
-              technology and the entertainment world through my work and to
-              create experiences that inspire and engage people worldwide.
-            </p>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >More info</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
+        </div>
+      </nav>
+      <!-- * Titles header -->
+      <div class="title-header" id="home">
+        <div class="container">
+          <!-- <div class="background-img">
+            <img src="./images/Header-img.webp" alt="Header image" />
+          </div> -->
+          <div class="main-title">
+            <h1>
+              Create the future pixel by pixel: welcome to my digital world
+            </h1>
+          </div>
+          <div class="main-title-animated">
+            <h1>
+              <span class="word"
+                ><span>C</span><span>r</span><span>e</span><span>a</span
+                ><span>t</span><span>e</span></span
+              >
+              <span>&nbsp;</span>
+              <span class="word"
+                ><span>t</span><span>h</span><span>e</span></span
+              >
+              <span>&nbsp;</span>
+              <span class="word"
+                ><span>f</span><span>u</span><span>t</span><span>u</span
+                ><span>r</span><span>e</span></span
+              >
+              <span>&nbsp;</span>
+              <span class="word"
+                ><span>p</span><span>i</span><span>x</span><span>e</span
+                ><span>l</span></span
+              >
+              <span>&nbsp;</span>
+              <span class="word"><span>b</span><span>y</span></span>
+              <span>&nbsp;</span>
+              <span class="word"
+                ><span>p</span><span>i</span><span>x</span><span>e</span
+                ><span>l</span><span>:</span></span
+              >
+              <span>&nbsp;</span>
+              <span class="word"
+                ><span>w</span><span>e</span><span>l</span><span>c</span
+                ><span>o</span><span>m</span><span>e</span></span
+              >
+              <span>&nbsp;</span>
+              <span class="word"><span>t</span><span>o</span></span>
+              <span>&nbsp;</span>
+              <span class="word"><span>m</span><span>y</span></span>
+              <span>&nbsp;</span>
+              <span class="word"
+                ><span>d</span><span>i</span><span>g</span><span>i</span
+                ><span>t</span><span>a</span><span>l</span></span
+              >
+              <span>&nbsp;</span>
+              <span class="word"
+                ><span>w</span><span>o</span><span>r</span><span>l</span
+                ><span>d</span></span
+              >
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- * About section-->
+      <section class="about-section" id="about">
+        <div class="container">
+          <div class="video-div">
+            <video autoplay loop muted playsinline id="video-background">
+              <source src="./video/BG-Video.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="h2-title"><h2>About Me</h2></div>
+          <div class="infoAndImage">
+            <div class="profile-picture">
+              <img
+                src="images/Profile-Picture.webp"
+                class="foto"
+                alt="profile picture of myself with t-shirt"
+              />
+            </div>
+            <div class="info-text">
+              <p>
+                Hello! <br />
+                I'm Gerardo Michele Mussuto, a former dancer who found his new
+                passion in the world of technology. <br />
+                After years of experience on stage, I decided to embark on a new
+                educational journey at the DCI school to become a full-stack web
+                developer. <br />
+                My passion for theater and opera is reflected in my aspiration
+                to develop websites for theaters around the world and for
+                emerging artists. <br />
+                I dream of combining my stage knowledge with my technical skills
+                to create engaging and immersive digital experiences. <br />
+                Outside of work, I enjoy spending my free time playing video
+                games, taking walks in nature, and exploring new travel
+                destinations. <br />
+                I'm always looking for new challenges and creative opportunities
+                to grow both professionally and personally. <br />
+                I'm excited to share my passion for technology and the
+                entertainment world through my work and to create experiences
+                that inspire and engage people worldwide.
+              </p>
+            </div>
+          </div>
+          <!-- ? Change to the path and nae of your resume -->
+          <div class="download-resume">
+            <a href="./File/Gerardo Cv.pdf" download="YourResumeName.pdf">
+              <button class="download-button">Download My Resume</button>
+            </a>
+          </div>
+          <div
+            class="h-captcha"
+            data-sitekey="b14cf806-38cc-4642-beea-b58cea386a26"
+            data-callback="onCaptchaSuccess"
+          ></div>
         </div>
       </section>
-      <!--Porfolio Section contains a card group with some project-->
-      <section class="project" id="portfolio">
-        <div class="container-tp">
-          <h2>Portfolio</h2>
-        </div>
-        <div class="card-container">
-          <!----------------------------------------------------------------------->
-              <div class="card-group">
-            <div class="card">
-              <img src="./imgPortfolio/Weather-App.png" alt="Project 1" />
-              <p>This Weather App is a simple web application that allows users to check the current weather of any city by entering its name.</p>
-           
-              <p>
-                Project realized using: HTML - CSS - JavaScript - WeatherAPI 
-              </p>
-            
-              <div id="show-more-button">
-                <a href="https://onid89.github.io/Weather-App/" target="_blank">
-                  <button class="show-more-button">Show More</button></a
-                >
-              </div>
-            </div>
-            <div class="card">
-              <img src="./imgPortfolio/pokemon-API.png" alt="Project 2" />
-              <p>A simple web application that allows users to search for a Pokémon by name and display its image (sprite) using the PokéAPI. </p>
-              <p>
-                Project realized using: HTML - CSS - JavaScript - Poke'API
-              </p>
-              <div id="show-more-button">
-                <a href="https://onid89.github.io/pokemon-fetch-data-api/" target="_blank">
-                  <button class="show-more-button">Show More</button></a
-                >
-              </div>
-            </div>
-            <div class="card">
-              <img src="./imgPortfolio/opera-prev.png" alt="Project 3" />
-              <p>This JavaScript code was created with a passion for theater and opera. Its purpose is to provide people with a clear and simple way to discover the available shows in Berlin.</p>
-              <p>Project Realized using: JavaScript ( usable only from terminal) </p>
-              <p>Project Link: <a href="https://github.com/Onid89/first-project-js" target="_blank">GitHub Repository</a></p>
-              <div id="show-more-button">
-                <a href="./imgPortfolio/Opera-JavaScript.png" target="_blank">
-                  <button class="show-more-button">Show More</button></a
-                >
-              </div>
-            </div>
-          </div>
-          <!--------------------------------------------------------------------------->
-          <div class="card-group">
-            <div class="card">
-              <img src="./imgPortfolio/caption-this.png" alt="Project 1" />
-              <p>
-                Project realized using : hover , animation and transition
-                property
-              </p>
-              <div id="show-more-button">
-                <a href="./project/captionThis/index.html" target="_blank">
-                  <button class="show-more-button">Show More</button></a
-                >
-              </div>
-            </div>
-            <div class="card">
-              <img src="imgPortfolio/lighting.png" alt="Project 2" />
-              <p>
-                Project realized using: text-shadow, animation-delay and
-                @keyframes
-              </p>
-              <div id="show-more-button">
-                <a href="./project/lightMeUp/index.html" target="_blank">
-                  <button class="show-more-button">Show More</button></a
-                >
-              </div>
-            </div>
-            <div class="card">
-              <img src="./imgPortfolio/sport-grid.png" alt="Project 3" />
 
-              <p>Project Realized using: Grid container</p>
-              <br />
-              <div id="show-more-button">
-                <a href="./project/sportsGrid/index.html" target="_blank">
-                  <button class="show-more-button">Show More</button></a
-                >
+      <!-- * Portfolio section-->
+      <section class="portfolio-section" id="portfolio">
+        <div class="container">
+          <div class="h2-title"><h2>My Portfolio</h2></div>
+          <div class="portfolio-items">
+            <div class="portfolio-item">
+              <div class="h3-title"><h3>Cantine Del Notaio</h3></div>
+              <div class="project-img">
+                <img
+                  src="./imgPortfolio/web-page.webp"
+                  alt="Portfolio Item 1"
+                />
               </div>
-            </div>
-          </div>
-          <div class="card-group">
-            <div class="card">
-              <img src="./imgPortfolio/Swagger.png" alt="Project 4" />
-              <p>
-                Project Realized using: A Form with four field inside and
-                special color around
-              </p>
-              <div id="show-more-button">
-                <a href="./project/swagger/index.html" target="_blank">
-                  <button class="show-more-button">Show More</button></a
-                >
+              <div class="project-desc">
+                <p>
+                  This is my first project made with html and css during the
+                  orientation course
+                </p>
               </div>
-            </div>
-            <div class="card">
-              <img src="./imgPortfolio/Grid-flexbox.png" alt="Project 5" />
-              <p>Project Realized using at the same time Grid and Flaxbox</p>
-              <br />
-              <div id="show-more-button">
-                <a
-                  href="./project/gridAndFlexboxLivingInHarmony/index.html"
-                  target="_blank"
-                >
-                  <button class="show-more-button">Show More</button></a
-                >
-              </div>
-            </div>
-            <div class="card">
-              <img src="./imgPortfolio/web-page.png" alt="Project 6" />
-              <p>
-                This is my first project made with html and css during the
-                orientation course
-              </p>
-              <div id="show-more-button">
+              <div class="show-more">
                 <a
                   href="./project/cantinedelnotaiowebpage/index.html"
                   target="_blank"
                 >
-                  <button class="show-more-button">Show More</button></a
-                >
+                  <button>Show More</button>
+                </a>
               </div>
-              
+            </div>
+            <div class="portfolio-item">
+              <div class="h3-title"><h3></h3></div>
+              <div class="project-img"><img src="" alt="" /></div>
+              <div class="project-desc"><p></p></div>
+              <div class="show-more">
+                <a href="" target="_blank"> <button>Show More</button> </a>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <div class="h3-title"><h3></h3></div>
+              <div class="project-img"><img src="" alt="" /></div>
+              <div class="project-desc"><p></p></div>
+              <div class="show-more">
+                <a href="" target="_blank"> <button>Show More</button> </a>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <div class="h3-title"><h3></h3></div>
+              <div class="project-img"><img src="" alt="" /></div>
+              <div class="project-desc"><p></p></div>
+              <div class="show-more">
+                <a href="" target="_blank"> <button>Show More</button> </a>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <div class="h3-title"><h3></h3></div>
+              <div class="project-img"><img src="" alt="" /></div>
+              <div class="project-desc"><p></p></div>
+              <div class="show-more">
+                <a href="" target="_blank"> <button>Show More</button> </a>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <div class="h3-title"><h3></h3></div>
+              <div class="project-img"><img src="" alt="" /></div>
+              <div class="project-desc"><p></p></div>
+              <div class="show-more">
+                <a href="" target="_blank"> <button>Show More</button> </a>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <div class="h3-title"><h3></h3></div>
+              <div class="project-img"><img src="" alt="" /></div>
+              <div class="project-desc"><p></p></div>
+              <div class="show-more">
+                <a href="" target="_blank"> <button>Show More</button> </a>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <div class="h3-title"><h3></h3></div>
+              <div class="project-img"><img src="" alt="" /></div>
+              <div class="project-desc"><p></p></div>
+              <div class="show-more">
+                <a href="" target="_blank"> <button>Show More</button> </a>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <div class="h3-title"><h3></h3></div>
+              <div class="project-img"><img src="" alt="" /></div>
+              <div class="project-desc"><p></p></div>
+              <div class="show-more">
+                <a href="" target="_blank"> <button>Show More</button> </a>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <div class="h3-title"><h3></h3></div>
+              <div class="project-img"><img src="" alt="" /></div>
+              <div class="project-desc"><p></p></div>
+              <div class="show-more">
+                <a href="" target="_blank"> <button>Show More</button> </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
-    </div>
 
-    <!--Contact Section working with Formspree-->
+      <!-- * Form section-->
+      <section class="form-section" id="contact">
+        <div class="container">
+          <div class="h2-title"><h2>Contact Me</h2></div>
+          <div class="form-div">
+            <form action="https://formspree.io/f/mpzvndnp" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
 
-    <div class="container-me" id="contact">
-      <h3>Contact Me</h3>
-      <form action="https://formspree.io/f/mpzvndnp" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="7"
+                required
+              ></textarea>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
+              <input class="submit-btn" type="submit" value="Send" />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
 
-        <input type="submit" value="Send" />
-      </form>
-    </div>
-    <!--Footer Section-->
+    <!-- * Footer-->
     <footer>
       <div class="footerclass">
         <div class="info">
           <div class="contact-detail">
-            <h2>Address:</h2>
+            <i class="fa-solid fa-location-dot"></i>
+            <h4>Address:</h4>
             <p>Berlin,10827</p>
           </div>
           <div class="contact-detail">
-            <h2>Email:</h2>
+            <i class="fa-solid fa-envelope"></i>
+            <h4>Email:</h4>
             <p><a href="mailto:you@example.com">dinomussuto89@gmail.com</a></p>
           </div>
           <div class="contact-detail">
-            <h2>Github:</h2>
+            <i class="fa-brands fa-github"></i>
+            <h4>Github:</h4>
             <p>
               <a
                 href="https://github.com/Onid89?tab=repositories"
@@ -360,18 +362,25 @@
               >
             </p>
           </div>
-          <div class="contact-detail"></div>
-            <h2>Linkedin:</h2>
-            <p><a href="https://www.linkedin.com/in/gerardo-michele-mussuto-895971313"  target="_blank">Linkedin</a></p>
+          <div class="contact-detail">
+            <i class="fa-brands fa-linkedin"></i>
+            <h4>Linkedin:</h4>
+            <p>
+              <a
+                href="https://www.linkedin.com/in/gerardo-michele-mussuto-895971313"
+                target="_blank"
+                >Linkedin</a
+              >
+            </p>
           </div>
         </div>
         <div class="copyright">
-          <p>&copy; 2024 Gerardo Michele Mussuto. Made with ❤︎</p>
+          <p>&copy; 2024 Gerardo Michele Mussuto. Made with &#10084;&#65039;</p>
         </div>
       </div>
     </footer>
 
-    <!--Bootstrap-->
+    <!--* Bootstrap script-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
