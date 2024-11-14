@@ -190,6 +190,20 @@ header .title-header h1 {
   background-color: var(--hover-light);
   font-weight: bolder;
 }
+
+/* Styles for H-Captcha */
+.container-captcha {
+  margin: 3rem 0;
+}
+.h-captcha iframe {
+  border: solid 0.3rem var(--titles-color);
+  margin: 3rem 1.5rem;
+  border-radius: 2rem;
+}
+.h-captcha iframe:hover {
+  border: 0.3rem var(--hover-light) outset;
+}
+
 /* * Portfolio section */
 .portfolio-section {
   background-color: var(--background-color);
@@ -354,37 +368,22 @@ footer .copyright {
 }
 
 /* * Media Queries for Smartphone Adaptation */
-/*
-@media screen and (max-width: 480px) {
-  .main-title h1 {
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  h1 {
+    transform: scale(0.7);
+  }
+
+  .footerclass {
     display: flex;
-    font-size: 5rem;
-  }
-  .title {
-    display: none;
-  }
-  .navbar {
-    font-size: 1.5rem;
-  }
-  .container-me,
-  .info {
-    padding: 1rem;
-    margin: 1rem;
-  }
-.foto {
-  max-width: 80%;
-}
-  footer .info {
     flex-direction: column;
-    padding: 1rem;
+    justify-content: center;
+    align-items: center;
   }
-  footer .info .contact-detail {
-    margin: 1rem 0;
+  .contact-detail {
+    width: 10rem;
   }
-  footer .info .copyright {
-    margin-top: 1rem;
-  }
-} */
+}
 
 /* * Apply animation delays to each letter */
 .main-title-animated h1 span:nth-child(1) span:nth-child(1) {
